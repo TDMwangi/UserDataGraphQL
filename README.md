@@ -5,44 +5,37 @@ Creates an Apollo GraphQL endpoint to manipulate fake user data.
 ## _Stack_
 
 Front end
-ReactJS
-Apollo client
-GraphQL
+
+- ReactJS
+- Apollo client
+- GraphQL
+
 Back end
-NodeJS
-ExpressJS
-GraphQL
-Express-GraphQL
 
-## _How to run:_
+- NodeJS
+- ExpressJS
+- GraphQL
+- Express-GraphQL
 
-Start a local copy of Redis
+Run a query
 
-```sh
-redis-server --port 6380
-redis-cli -p 6380
-keys *
-get dspace_legacy_offset
+```json
+query {
+  getAllUsers {
+    firstName,
+    lastName
+  }
+}
 ```
 
-Start a local copy of OpenSearch
+Run a mutation
 
-```sh
-cd opensearch-server
-./opensearch-tar-install.sh
-cd opensearch-dashboard
-./bin/opensearch-dashboards
-```
-
-Navigate to
-
-- [http://localhost:5601][df1]
-- Username (admin)
-- Password (admin)
-
-Startup the project
-
-```sh
-npm run build
-npm start
+```json
+mutation {
+  createUser (firstName: "Kim", lastName: "Kardashian", email: "kim@gmail.com", password: "kanye") {
+    firstName,
+    lastName,
+    email
+  }
+}
 ```
