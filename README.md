@@ -23,7 +23,7 @@ Back end:
 npm run watch
 ```
 
-![image info](./img/2.png)
+![image info](https://github.com/TDMwangi/user-data-graphql/blob/main/client/public/img/2.png)
 
 ## _How to run a query:_
 
