@@ -23,6 +23,8 @@ Back end:
 npm run watch
 ```
 
+![image info](./img/2.png)
+
 ## _How to run a query:_
 
 ```sh
@@ -45,3 +47,5 @@ mutation {
   }
 }
 ```
+
+![image info](./img/1.png)
