@@ -38,7 +38,7 @@ query {
 
 ## _How to run a mutation:_
 
-```json
+```sh
 mutation {
   createUser (firstName: "Kim", lastName: "Kardashian", email: "kim@gmail.com", password: "kanye") {
     firstName,
@@ -48,4 +48,4 @@ mutation {
 }
 ```
 
-![image info](./img/1.png)
+![image info](https://github.com/TDMwangi/user-data-graphql/blob/main/client/public/img/1.png)
