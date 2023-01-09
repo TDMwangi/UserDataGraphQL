@@ -2,24 +2,30 @@
 
 Creates an Apollo GraphQL endpoint to manipulate fake user data.
 
-## _Stack_
+## _Stack:_
 
-Front end
+Front end:
 
 - ReactJS
 - Apollo client
 - GraphQL
 
-Back end
+Back end:
 
 - NodeJS
 - ExpressJS
 - GraphQL
 - Express-GraphQL
 
-Run a query
+## _At the root of the project run:_
 
-```json
+```sh
+npm run watch
+```
+
+## _How to run a query:_
+
+```sh
 query {
   getAllUsers {
     firstName,
@@ -28,7 +34,7 @@ query {
 }
 ```
 
-Run a mutation
+## _How to run a mutation:_
 
 ```json
 mutation {
